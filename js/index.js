@@ -111,3 +111,25 @@
 // let b = 'hello goiteens';
 // console.log(b.includes('hello'));
 // console.log(b.includes('hel1o'));
+
+// const b = 'hello goiteens';
+// console.log(b.startsWith('hell'));
+// console.log(b.endsWith('ns'));
+
+// const b = 'hello goiteens';
+// console.log(b.padStart(18, 'yeah'));
+// console.log(b.padEnd(19, 'yeah'));
+// console.log(b.length);
+
+// const y = 'hello                         ';
+// console.log(y);
+// console.log(y.trim());
+
+// const name = 'bohdan';
+// const age = 13;
+// const message = 'My name is' + ' ' + name + ',' + ' i`m' + ' ' + age + '!';
+// console.log(message);
+
+// const sameMessage = `My name is ${name}, i'm ${age}!`;
+// console.log(sameMessage);
+
