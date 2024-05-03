@@ -66,3 +66,48 @@
 
 // const b = 'hello';
 // console.log(Number(b));
+
+// const a = '5';
+// console.log(typeof Number(a));
+
+// const b = 'hello';
+// console.log(Number(b));
+
+// console.log(Number.parseInt('20px'));
+// console.log(Number.parseInt('3.14haha'));
+
+// console.log(Number.parseFloat('12.57haha'));
+
+// console.log(Number.parseFloat('3.84x'));
+
+// const a = Number('20');
+// console.log(Number.isNaN(a));
+
+// const b = Number('hello');
+// console.log(Number.isNaN(b));
+
+// console.log(0.1 + 0.2 === 0.3);
+// console.log(0.1 + 0.2);
+
+// console.log((0.1 * 10 + 0.2 * 10) / 10 );
+
+// console.log(Math.floor(2.4));
+// console.log(Math.ceil(2.4));
+// console.log(Math.round(2.4));
+
+// console.log(Math.max(4, 2, 1.4));
+// console.log(Math.min(4, 2, 1.4));
+
+// console.log(Math.round(Math.random()*(10 - 1) + 1));
+
+// const a = 'hello' + 'GoIteens';
+// console.log(typeof a);
+
+// let b = 5 + '8';
+
+// let b = '5' + 5 + 5;
+// console.log( b);
+
+// let b = 'hello goiteens';
+// console.log(b.includes('hello'));
+// console.log(b.includes('hel1o'));
