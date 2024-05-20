@@ -240,3 +240,147 @@
 // const result = (a + b < 4) ? 'Нижче' : 'Вище';
 // console.log(result)
 
+// let cost;
+// const sub = 'premium';
+// switch (sub){
+//     case 'free':
+//         cost = 0;
+//         break;
+//     case 'pro':
+//         cost = 50;
+//         break;
+//     case 'premium':
+//         cost = 200;
+//         break;
+//     default:
+//         console.log('I have no answer');
+// }
+// console.log(cost);
+
+// let a = parseInt(prompt('Your number:'));
+// let b;
+// switch (a){
+//     case 0:
+//         b = 0;
+//         break;
+//     case 1:
+//         b = 1;
+//         break;
+//     case 2:
+//         b = 2;
+//         break;
+//     case 3:
+//         b = 3;
+//         break;
+//     default:
+//             console.log('uups')
+// }
+// console.log(b)
+
+// if (browser == "Edge") {
+//   p.textContent = "You've got the Edge!";
+// }
+// else if (
+//   browser == "Chrome" ||
+//   browser == "Firefox" ||
+//   browser == "Safari" ||
+//   browser == "Opera"
+// ) {
+//   p.textContent = "Ми підтримуємо і ці браузери";
+// }
+// else {
+//   p.textContent = "Маємо надію, що ця сторінка виглядає добре!";
+// }
+
+// let a = prompt('Your browser: ')
+// let p;
+// switch (a){
+//     case "Edge":
+//         p = "You've got the Edge!";
+//         break;
+//     case "Chrome":
+//     case "Firefox":
+//     case "Safari":
+//     case "Opera":
+//         p = "Ми підтримуємо і ці браузери";
+//         break;
+//     default:
+//         alert("Маємо надію, що ця сторінка виглядає добре!")
+// }
+// console.log(p)
+
+// const isOnline = true;
+// const isFriend = true;
+// const isDnd = false;
+
+// if (isOnline === true && isFriend === true && isDnd === false){
+//     alert('You can open chat');
+// }
+// else{
+//     alert('You cann`t open chat');
+// }
+
+// const x1 = 10;
+// const x2 = 30;
+// const number = 45;
+// if (x1 < number && number < x2){
+//     alert('It`s correct')
+// }
+// else{
+//     alert('It`s incorrect')
+// }
+
+// const stars = 4;
+// let price;
+
+// if (stars === 1){
+//     price = 20;
+// }
+// else if (stars === 2){
+//     price = 30;
+// }
+// else if (stars === 3){
+//     price = 100;
+// }
+// else if (stars === 4){
+//     price = 200;
+// }
+// else if (stars === 5){
+//     price = 500;
+// }
+// else{
+//     console.log('I found nothing')
+// }
+
+// switch (stars) {
+//   case 1:
+//     price = 20;
+//     break;
+//   case 2:
+//     price = 30;
+//     break;
+//   case 3:
+//     price = 100;
+//     break;
+//   case 4:
+//     price = 200;
+//     break;
+//   case 5:
+//     price = 500;
+//     break;
+//   default:
+//     console.log("I found nothing");
+// }
+
+
+// console.log(price + "$");
+
+// let height = 151;
+// if (true){
+//     let weight = 60;
+//     console.log(weight);
+//     console.log(height)
+// }
+// console.log(height)
+// console.log(weight)
+
