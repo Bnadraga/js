@@ -98,22 +98,7 @@ function checkColor() {
 
 // 6
 
-// function calculation() {
-//   const inputFNumber = document.getElementById("firstNumber").value;
-//   const inputSNumber = document.getElementById("secondNumber").value;
-//   const selectTwo = document.getElementById("chooseOperation").value;
-//   const selectedTwo = selectTwo.options[selectTwo.selectedTwoIndex].value;
 
-//   if (selectedTwo === "+") {
-//     alert(inputFNumber + inputSNumber);
-//   } else if (selectedTwo === "-") {
-//     alert(inputFNumber - inputSNumber);
-//   } else if (selectedTwo === "*") {
-//     alert(inputFNumber * inputSNumber);
-//   } else if (selectedTwo === "/") {
-//     alert(inputFNumber / inputSNumber);
-//   }
-// }
 function calculate() {
     const firstNumber = parseFloat(document.getElementById('firstNumber').value);
     const secondNumber = parseFloat(document.getElementById('secondNumber').value);

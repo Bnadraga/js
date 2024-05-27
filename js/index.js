@@ -384,3 +384,59 @@
 // console.log(height)
 // console.log(weight)
 
+// const b = 15;
+
+// if (true){
+//     const b = 10;
+
+//     console.log(a);
+//     console.log(b);
+// }
+
+// let number = 0;
+// while (number < 10){
+//     console.log('number: ', number)
+//     number += 1
+// }
+
+// let clientCounter = 10;
+// const maxClient = 20;
+
+// while (clientCounter < maxClient){
+//     alert(clientCounter);
+//     clientCounter += 1;
+// }
+
+// let pass = '';
+// do{
+//     pass = prompt('Your password (< 5 symbols)', '');
+// }
+// while(pass.length < 6);
+// console.log('password: ', pass)
+
+// const max = 5;
+// for (let i = 0; i < max; i += 1){
+//     console.log(i);
+// }
+
+// const num = 3;
+// let sum = 0;
+
+// for (let i = 0; i <= num; i += 1){
+//     sum += i;
+// }
+// console.log(sum)
+
+// for (let i = 10; i < 10; i += 1){
+//     if (i === 6){
+//         break;
+//     }
+// }
+
+// const sum = 10;
+// for (let i = 0; i < sum; i += 1){
+//     if (i % 2 === 0){
+//         continue;
+//     }
+//     console.log(i)
+// }
