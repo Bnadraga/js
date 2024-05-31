@@ -372,7 +372,6 @@
 //     console.log("I found nothing");
 // }
 
-
 // console.log(price + "$");
 
 // let height = 151;
@@ -440,3 +439,96 @@
 //     }
 //     console.log(i)
 // }
+
+// const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// const frut = ['Apple', 'Banana', 'Orange'];
+// frut[0] = 'Kiwi'
+// console.log(frut)
+// console.table(frut)
+
+// const arr = ['dog', 'cat', 'mouse']
+
+// arr[10] = 'crocodile'
+// console.table(arr)
+
+// const lIndex = arr.length - 1
+// console.log(lIndex)
+
+// const mass = ['lol', 1, true];
+// console.log(mass);
+// console.log('massive length: ', mass.length);
+// console.log(mass[2]);
+// mass[2] = false;
+// console.log(mass);
+// console.log(mass[2]);
+
+// const Arr1 = [1, 5, '4', 'hello'];
+// const Arr2 = [true, 2, {}, ['a'], 222];
+// console.log(Arr1[1]);
+// console.log(Arr2[1]);
+// console.log(Arr1[1] + Arr2[1]);
+
+// const cars = ['Mini', 'Škoda', 'Mclaren', 'Formula 1', 'Tesla']
+// console.log(cars[0])
+// console.log('massive length: ',cars.length)
+// cars[5] = 'Bently'
+// console.log(cars)
+
+// const names = ['Volodya', 'Bodya', 'Sasha'];
+
+// for (let i = 0; i < names.length; i += 1){
+//     console.log('Names: ', names[i]);
+// }
+
+// const names = ['Volodya', 'Bodya', 'Sasha'];
+
+// for (const name of names){
+//     console.log(name)
+// }
+
+// const names = ['Volodya', 'Bodya', 'Sasha'];
+
+// const find = 'Sasha';
+// let message;
+// for (const name of names){
+//     if (name === find){
+//         message = 'It`s you!';
+//         break;
+//     }
+//     message = 'Not found';
+// }
+// console.log(message)
+
+// const nums = [12, 15, 80, 50, 44, 13]
+// const summa = 15;
+// for (let i = 0; i < nums.length; i ++){
+//     if (nums[i] < summa){
+//         continue;
+//     }
+//     console.log(nums[i])
+// }
+
+// const arr = [
+//     [1, 2, 3],
+//     [4, 5, 6],
+//     [7, 8, 9]
+// ]
+// console.log(arr[1][1])
+
+// const cart = [54, 28, 105, 70, 92, 17, 120, 12, 25, 90];
+// let total = 0;
+// for (let i = 0; i < cart.length;  i++){
+//     total += cart[i]
+// }
+// console.log(total)
+
+// const numbers = [1, 5, 8, 9, 12, 4, 15, 27, 30, 18, 14];
+// let total = 0;
+
+// for (let i = 0; i < numbers.length; i++) {
+//   if (numbers[i] % 2 === 0) {
+//     total += numbers[i];
+//   }
+// }
+// console.log(total);
