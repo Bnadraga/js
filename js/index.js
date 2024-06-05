@@ -532,3 +532,38 @@
 //   }
 // }
 // console.log(total);
+
+// const str = 'String lol lol'
+// console.log(str.split(''))
+
+// const arr = ['Lyosha', 'Grisha', 'Petya']
+// console.log(arr.join('; '))
+
+// const arr = ['Lyosha', 'Grisha', 'Petya']
+// console.log(arr.indexOf('Petya'))
+
+// const arr = ['Lyosha', 'Grisha', 'Petya']
+// console.log(arr.includes('Petya'))
+
+// const arr = ['Lyosha', 'Grisha', 'Petya']
+// console.log(arr.includes('Petya'))
+
+// const fruts = ["banana", "strawberry", "cherry"];
+// const frut = "banana";
+// if (fruts.includes(frut)) {
+//   alert("Yes");
+// } else {
+//   alert("No");
+// }
+
+// const num = [1, 2];
+// num.push(3)
+// num.push(8)
+// num.pop()
+// console.log(num)
+
+// const names = ['Lyosha', 'Grisha', 'Petya'];
+// console.log(names)
+// names.unshift('Alyosha')
+// names.unshift('Alosha')
+// console.log(names)
