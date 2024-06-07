@@ -567,3 +567,28 @@
 // names.unshift('Alyosha')
 // names.unshift('Alosha')
 // console.log(names)
+
+// const num = [1, 2, 3, 4, 5]
+
+// const delNum = num.splice(0, 3)
+// console.log(delNum)
+// console.log(num)
+
+// const addNum = num.splice(2, 0, 6, 7)
+// console.log(num)
+
+// const repNum = num.splice(1, 1, 5)
+// console.log(num)
+
+// const num = [1, 2, 3, 4, 5]
+// const num2 = [6, 7, 8, 9, 10]
+// const arr = num.concat(num2)
+// console.log(arr)
+
+// const message = 'Welcome to Ukraine!'
+// const arrMess = message.split('')
+// console.log(arrMess)
+// console.log(arrMess.indexOf('l'))
+// const strMess = arrMess.join('')
+// console.log(strMess)
+
