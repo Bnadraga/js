@@ -592,3 +592,84 @@
 // const strMess = arrMess.join('')
 // console.log(strMess)
 
+// const sum = function (a, b, c) {
+//   return a + b + c;
+// }
+// const res = sum(2, 4, 1)
+// console.log(res)
+
+// const count = function(from = 0, to = 5, step = 1){
+//     console.log(`from: ${from}, to: ${to}, step: ${step}`)
+//     for (let i = from; i <= to; i += step){
+//         console.log(i);
+//     }
+// };
+// count(0, 5)
+
+// const bank = function(amount, balance){
+//     if (amount === 0){
+//         alert('Please print sum " > 0"')
+//     }
+//     else if(amount > balance){
+//         alert('You haven`t cash')
+//     }
+//     else{
+//         alert('Perfect operation')
+//     }
+// }
+// bank(180, 200)
+
+// const bank = function (amount, balance) {
+//   if (amount === 0) {
+//     alert('Please print sum " > 0"');
+//     return;
+//   }
+//   if (amount > balance) {
+//     alert("You haven`t cash");
+//     return;
+//   }
+//   alert("Perfect operation");
+// };
+// bank(1, 200);
+
+// const sum = function () {
+//   let total = 0;
+//   for (const argument of arguments) {
+//     total += argument;
+//   }
+//   return total;
+// };
+// console.log(sum(1, 2, 3))
+
+// const fn = function(){
+//     const arg = Array.from(arguments)
+//     console.log(arg)
+// }
+// fn(5, 9, 10)
+
+// const b = 10;
+// const sum = function () {
+//   const a = 5;
+//   return a + b;
+// };
+
+// console.log(sum());
+
+// const value = 20;
+// const sum = function (number) {
+//   const value = 10;
+//   const inner = 5;
+//   return number + value + inner;
+// };
+// console.log(value)
+// console.log(sum(4))
+
+// console.log(value);
+// const value = 10;
+
+// if (true) {
+//   console.log(value);
+//   var value = 5;
+//   console.log(value);
+// }
+
