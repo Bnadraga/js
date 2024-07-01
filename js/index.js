@@ -673,3 +673,164 @@
 //   console.log(value);
 // }
 
+// const sum = function(a, b, c){
+//     return a + b + c
+// }
+// const add = (a, b, c) => a + b + c
+// const add1 = (a, b, c) => {
+//     return a + b + c
+// }
+// const add2 = () =>{
+//     console.log('heloouuu')
+// }
+
+// const arr = [1, 2, 3, 4, 5];
+
+// function sumArray(arr, callback) {
+//   let sum = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     sum += callback(arr[i]);
+//   }
+//   return sum;
+// }
+// function cb(elements) {
+//   return elements;
+// }
+
+// console.log(sumArray(arr, cb))
+
+// const myNewArrowFunction = (...arg) => {
+//   console.log(arg)
+// }
+// myNewArrowFunction(1, 2, 3);
+// myNewArrowFunction(100, 200, 300, 400, 500);
+// myNewArrowFunction("Js", "Python", "Java", "PHP", "C++");
+
+// const hello1 = (mess) => {
+//   console.log(mess)
+// }
+// hello1('Привіт JavaScript')
+
+// const hello2 = (name) => `Hello ${name}`
+// console.log(hello2('Artem'))
+
+// const mul = (n, m) => {
+//   return {
+//     sum: n + m,
+//     mn: n * m,
+//     riz: n - m,
+//   };
+// };
+// console.log(mul(2, 3));
+
+// const user = {
+//     name: 'bob',
+//     age: 28,
+// }
+// console.log(user.name)
+// console.log(user['name'])
+
+// user.name = 'alex'
+// console.log(user.name)
+// console.log(user)
+
+// user.address = 'Green Street 21'
+// console.log(user)
+// console.log(user.class)
+
+// const hotel = {
+//     name: 'Hvilya',
+//     stars: 2,
+//     capacity: 80,
+//     person: ['bob', 'natalia', 'alex']
+// }
+// delete hotel.stars
+// alert(hotel)
+
+// const key = 'person'
+// const getKey = function(){
+//     return 'age'
+// }
+// const object = {
+//     [key]: 'nick',
+//     [getKey()]: 19,
+// }
+// console.log(object)
+
+// const login = '@java_script'
+// const password = '1234'
+// const object = {
+//     login,
+//     password,
+//     name: 'Java',
+// }
+// console.log(object)
+
+// const hotel = {
+//   name: "hilton",
+//   stars: 5,
+//   get: function (lol) {
+//     console.log(lol);
+//   },
+
+//   get2(lol) {
+//     console.log(lol);
+//   },
+// };
+
+// hotel.get("bruh");
+// hotel.get2("bruh2");
+
+// const me = {
+//     name: 'Bohdan',
+//     age: 13,
+//     hobby: 'Front-end',
+// }
+// console.table(me)
+
+// const car = {
+//   brand: "MINI",
+//   model: "Cooper",
+//   years: 2021,
+//   color: "red",
+//   get: function () {
+//     const infoCar = `
+//         brand: ${this.brand};
+//         model: ${this.model};
+//         years: ${this.years};
+//         color: ${this.color}
+//         `;
+//     document.getElementById('carInfo').innerText = infoCar
+//   },
+// };
+
+// car.get()
+
+// const restauran = {
+//   name: "U Halee",
+//   cuis: "Ukraine",
+//   address: "st. Schevchenko 30",
+//   rating: 3,
+//   uptInfo(inputAddress, inputRating) {
+//     this.address = inputAddress;
+//     this.rating = inputRating;
+//     this.displayInfo();
+//   },
+//   displayInfo() {
+//     document.getElementById("name").innerText = "Name: " + this.name;
+//     document.getElementById("cuis").innerText = "Cuis: " + this.cuis;
+//     document.getElementById("address").innerText = "Address: " + this.address;
+//     document.getElementById("rating").innerText = "Rating: " + this.rating;
+//   },
+// };
+// restauran.displayInfo();
+
+// const uptRest = function () {
+//   const newAddress = document.getElementById("newAddress").value;
+//   const newRating = parseFloat(document.getElementById("newRating").value);
+//   if (newAddress && !isNaN(newRating)) {
+//     restauran.uptInfo(newAddress, newRating);
+//   } else {
+//     alert("It`s not correct");
+//   }
+// };
