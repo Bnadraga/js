@@ -834,3 +834,123 @@
 //     alert("It`s not correct");
 //   }
 // };
+
+// const user = {
+//     name: 'Bohdan',
+//     age: 13,
+//     class: 9,
+// }
+// for (const key in user){
+//     console.log(key)
+// }
+// for (const key in user){
+//     console.log(user[key])
+// }
+
+// const allKeys = Object.keys(user)
+// console.log(allKeys)
+// const allValues = Object.values(user)
+// console.log(allValues)
+// const allEntries = Object.entries(user)
+// console.log(allEntries)
+
+// const hotel = {
+//   name: "U Haly",
+//   stars: 3,
+//   capacity: 200,
+// };
+// const keys = Object.keys(hotel);
+
+// for (const key of keys){
+//     console.log('value: ', hotel[key])
+// }
+
+// const entries = Object.entries(hotel)
+// for (const entry of entries){
+//     const key = entry[0]
+//     const value = entry[1]
+//     console.log(`${key}: ${value}`)
+// }
+
+// const market = {
+//   apple: 4,
+//   orange: 2,
+//   kiwi: 0.5,
+//   grapes: 1,
+// };
+// const values = Object.values(market);
+// let total = 0;
+// for (const value of values) {
+//   total += value;
+// }
+// console.log(total);
+
+// const tem = [37, 34, 39]
+// const min = Math.min(tem)
+// console.log(min)
+// const minTem = Math.min(...tem)
+// console.log(minTem)
+
+// const names = ["Артур", "Дмитро", "Роман", "Софія", "Давід", "Юля"];
+// const spreadNames = [...names];
+// console.log(names);
+// console.log(spreadNames);
+// console.log(names === spreadNames);
+// const sliceNames = names.slice()
+// console.log(names)
+// console.log(sliceNames)
+// const newName = [...names, 'Nika']
+// console.log(newName)
+
+// const nums = [1, 2, 3]
+// const letters = ['a', 'b', 'c']
+// const spreadNums = [...nums, ...letters];
+// console.log(spreadNums)
+
+// const names = ["Sara", "Nick", "Din", "Alex"];
+// const newNames = [...names, "Bob"];
+// console.log(newNames)
+
+// const names = ["Sara", "Nick", "Din", "Alex"];
+// const nums = [2, 3, 5, 10];
+// const newArr = [...names, ...nums];
+// console.log(newArr)
+
+// const nums = [1, 2, 3]
+// const newNum = [...nums]
+// const newArr = [...nums, 3]
+
+// const names = ["Sara", "Nick", "Din", "Alex"];
+// const newNames = [
+//     ...names.slice(0, 2),
+//     "Bob",
+//     ...names.slice(3)];
+// console.log(newNames);
+
+// const a = {
+//   x: 5,
+//   y: 10,
+// };
+// const b = {
+//   x: 20,
+//   c: 25,
+// };
+// const d = Object.assign({}, a, b);
+// console.log(d);
+
+// const d = {r: 25, ...a, ...b}
+// console.log(d);
+
+// let a = 10;
+// let b = 15;
+// a = 20;
+// console.log(a);
+// console.log(b);
+
+// const c = ['bob']
+// const d = c
+// console.log(d)
+
+// c.push('nick')
+// console.log(c)
+// console.log(d)
