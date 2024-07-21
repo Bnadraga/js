@@ -954,3 +954,136 @@
 // c.push('nick')
 // console.log(c)
 // console.log(d)
+
+// const hotel = {
+//   name: "Hilton",
+//   stars: 5,
+//   capacity: 250,
+// };
+// const { name, stars, capacity } = hotel;
+// console.log(name, stars, status)
+// console.log(hotel)
+
+// const {name = 'hotel', stars = 4, status = 'premium'} = hotel
+// console.log(name, stars, status)
+
+// const {name: hotelName, stars, status: hotelStatus} = hotel
+// console.log(hotelName, stars, hotelStatus)
+
+// const {name, ...rest} = hotel;
+// console.log(name);
+// console.log(rest);
+
+// let option = {
+//   size: {
+//     width: 200,
+//     height: 300,
+//   },
+//   items: ["cake", "donut"],
+//   extra: true,
+// };
+// const {
+//     size: {width, height},
+//     items: [item1, item2],
+//     title = 'menu'
+// } = option
+// console.log(title)
+// console.log(width)
+// console.log(item1)
+// console.log(item2)
+
+// const rgb = [200, 35, 255];
+// const [red, green, blue] = rgb;
+// console.log(blue);
+
+// let red, green, blue
+// [red, green, blue] = rgb
+// console.log(blue);
+
+// const [red, green, blue, alfa = 0.1] = rgb
+
+// const [red, ...colors] = rgb
+// console.log(colors)
+// const [, , blue] = rgb
+// console.log(blue)
+
+// const user = {
+//     name: 'Jonh',
+//     age: 30,
+//     email: 'random@email'
+// }
+// const {name, age, email} = user
+
+// const books = {
+//   count: 3,
+//   list: [
+//     {
+//       title: "The Great Gatsby",
+//       author: "F. Scott Fitzgerald",
+//       year: 1925,
+//     },
+//     {
+//       title: "To Kill a Mockingbird",
+//       author: "Harper Lee",
+//       year: 1960,
+//     },
+//     {
+//       title: "1984",
+//       author: "George Orwell",
+//       year: 1949,
+//     },
+//   ],
+// };
+// const {count, list} = books
+// const [book1, book2, book3] = list
+// const {title: title1, author: author1, year: year1} = book1
+// const {title: title2, author: author2, year: year2} = book2
+// const {title: title3, author: author3, year: year3} = book3
+
+// console.log(count)
+// console.log(title1, '; ', author1, '; ', year1)
+// console.log(title2, '; ', author2, '; ', year2)
+// console.log(title3, '; ', author3, '; ', year3)
+
+// const person = {
+//   name: "Nelli",
+//   surname: "Laroy",
+//   age: 25,
+// };
+// const personInfo = ({name, surname, age}) => {
+//   return `Your name ${name}, your surname ${surname}, your age ${age}`
+// }
+// console.log(personInfo(person))
+
+// const student = {
+//   name: 'Bruce',
+//   surname: 'Lee',
+//   grades: [4, 5, 3]
+// };
+// const calculateAverageGrade = (grades) => {
+//   const [first, second, third] = grades
+//   return ((first + second + third) / grades.length)
+// }
+// console.log(calculateAverageGrade(student));
+
+// const items = [
+//   { name: "Футболка", price: 250, quantity: 2 },
+//   { name: "Джинси", price: 800, quantity: 1 },
+//   { name: "Кросівки", price: 1200, quantity: 1 },
+// ];
+
+// const calculateTotalCost = (item) => {
+//   let totalCost = 0;
+//   for (const { price, quantity } of items) {
+//     totalCost += price * quantity;
+//   }
+//   return totalCost;
+// };
+
+// console.log(calculateTotalCost(items));
+
+
+
+
+// ІМПЕРАТИВНИЙ
+const nums = [1, 2, 3, 4, 5, 6]
