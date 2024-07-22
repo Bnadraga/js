@@ -1082,8 +1082,109 @@
 
 // console.log(calculateTotalCost(items));
 
-
-
-
 // ІМПЕРАТИВНИЙ
-const nums = [1, 2, 3, 4, 5, 6]
+// const nums = [1, 2, 3, 4, 5, 6];
+// const filterNums = [];
+
+// for (let i = 0; i < nums.length; i++) {
+//     if (nums[i] > 3){
+//         filterNums.push(nums[i])
+//     }
+// }
+// console.log(filterNums)
+
+// ДЕКЛАРАТИВНИЙ
+// const nums = [1, 2, 3, 4, 5, 6];
+// const filterNums = nums.filter((value) => {return value > 3});
+// console.log(filterNums);
+
+// const a = (array, value) => {
+//     for (let i = 0; i < array.length; i++){
+//         array[i] *= value
+//     }
+// }
+// const num = [1, 2, 3, 4, 5, 6]
+// a(num, 2)
+// console.log(num)
+
+// ЧИСТІ ФУНКЦІЇ
+// const pure = (array, value) => {
+//   const result = [];
+//   for (let i = 0; i < array.length; i++) {
+//     result.push(array[i] * value)
+//   }
+//   return result
+// };
+// const nums = [1, 2, 3, 4, 5, 6]
+// const doubledNums = pure(nums, 2)
+// console.log(nums)
+// console.log(doubledNums)
+
+// Методи
+
+// const nums = [1, 2, 3, 4, 5, 6]
+
+// // forEach
+
+// nums.forEach(num => console.log(num))
+// nums.forEach((num, idx) => console.log(`index: ${idx}, value: ${num}`))
+
+// // map
+
+// const doubled = nums.map(num => num * 2)
+// console.log(doubled)
+
+// const users = [
+//   { name: "Bob", age: 17 },
+//   { name: "Nik", age: 27 },
+//   { name: "Alex", age: 47 },
+// ];
+// const names = users.map(user => user.name)
+// console.log(names)
+
+// // filter
+
+// const nums = [1, 2, 3, 4, 5, 6, 7, 8]
+// console.log(nums.filter(num => num < 5))
+// console.log(nums.filter(num => num === 5))
+// console.log(nums.filter(num => num > 5))
+
+// const users = [
+//     {name: 'Alex', isActive: true},
+//     {name: 'Bob', isActive: false},
+//     {name: 'Nik', isActive: true},
+//     {name: 'Anna', isActive: true},
+//     {name: 'Dilan', isActive: false},
+// ]
+// const userActive = users.filter(user => user.isActive)
+// console.log(userActive)
+// const userNotActive = users.filter(user => !user.isActive)
+// console.log(userNotActive)
+
+// // find
+
+// const nums = [1, 2, 3, 4, 5, 6, 7, 8]
+// console.log(nums.find(num => num < 6))
+
+// const users = [
+//     {name: 'Alex', isActive: true, id: 1},
+//     {name: 'Bob', isActive: false, id: 2},
+//     {name: 'Nik', isActive: true, id: 3},
+//     {name: 'Anna', isActive: true, id: 4},
+//     {name: 'Dilan', isActive: false, id: 5},
+// ]
+// console.log(users.find(user => user.id === 3))
+
+// // every
+
+// const nums = val => val >= 15
+// console.log([20, 135, 96, 10, 88, 74, 64].every(nums))
+
+// const fruits = [
+//     {name: 'orange', amount: 40},
+//     {name: 'kiwi', amount: 100},
+//     {name: 'apple', amount: 48},
+//     {name: 'banana', amount: 0},
+// ]   
+// console.log(fruits.every(fruit => fruit.amount > 0))
+// console.log(fruits.some(fruit => fruit.amount > 0))
