@@ -1185,6 +1185,166 @@
 //     {name: 'kiwi', amount: 100},
 //     {name: 'apple', amount: 48},
 //     {name: 'banana', amount: 0},
-// ]   
+// ]
 // console.log(fruits.every(fruit => fruit.amount > 0))
 // console.log(fruits.some(fruit => fruit.amount > 0))
+
+// колбек
+
+// const callback = () => console.log("hello");
+// function fun(callback) {
+//   callback();
+// }
+// fun(callback)
+
+// const nums = [11, 24, 31, 14, 51, 36, 27, 8, 9];
+// const cost = nums.map(function (num) {
+//   return num * 1.6;
+// });
+// console.log(cost);
+
+// const allElements = function (arr, callback) {
+//   for (let i = 0; i < arr.length; i++) {
+//     if (!callback(arr[i])) {
+//       return false;
+//     }
+//   }
+//   return true;
+// };
+
+// const allEven = allElements([2, 4, 6, 8, 10], function (element) {
+//   return element % 2 === 0;
+// });
+// console.log(allEven)
+
+// const filterArray = function (arr, callback) {
+//   const newArr = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (callback(arr[i])) {
+//       newArr.push(arr[i]);
+//     }
+//   }
+//   return newArr;
+// };
+// const nums = filterArray([3, 17, 12, 15, 25, 88, 98, 23], function (element) {
+//   return element % 2 === 1;
+// });
+// console.log(nums)
+
+// const nums = [17, 52, 65, 41, 12, 9];
+// const sum = nums.reduce((acc, value) => acc + value, 0);
+// console.log(sum);
+
+// const tweets = [
+//   { id: "012", likes: 23, tag: ["css", "sass"] },
+//   { id: "017", likes: 2, tag: ["js", "javascript"] },
+//   { id: "018", likes: 87, tag: ["css", "html"] },
+//   { id: "019", likes: 47, tag: ["react", "js"] },
+//   { id: "024", likes: 98, tag: ["nodejs", "js"] },
+// ];
+// const likes = tweets.reduce((totalLikes, twet) => totalLikes + twet.likes, 0);
+// console.log(likes);
+
+// const likes = (tweets) =>
+//   tweets.reduce((totalLikes, twet) => totalLikes + twet.likes, 0);
+// console.log(likes(tweets));
+
+// const tags = tweets.reduce((allTag, tweet) => {
+//   allTag.push(...tweet.tag);
+//   return allTag;
+// }, []);
+// console.log(tags);
+
+// const tagsSum = (tweets) =>
+//   tweets.reduce((allTag, tweet) => {
+//     allTag.push(...tweet.tag);
+//     return allTag;
+//   }, []);
+// const tags = tagsSum(tweets);
+// const tagsCount = (acc, tag) => {
+//   if (!acc.hasOwnProperty(tag)) {
+//     acc[tag] = 0;
+//   }
+//   acc[tag]++;
+//   return acc;
+// };
+// const totalTags = (tags) => tags.reduce(tagsCount, {});
+// const tagCount = totalTags(tags);
+// console.log(tagCount);
+
+// const nums = [5, 6, 1, 3, 4, 2, '8', '7']
+// console.log(nums.sort())
+
+// const names = ['Alex', 'Nick', 'Bob', 'Jonh']
+// console.log(names.sort())
+
+// const lets = [5, 6, 1, 3, 4, 2];
+// console.log(lets.sort());
+// const newLets = lets.sort((curEl, nextEl) => {
+//   return curEl - nextEl;
+// });
+// console.log(newLets);
+
+// const fruit = ['kiwi', 'apple', 'orange', 'banana']
+// console.log(
+//     fruit.sort(function(a, b){
+//         return a.localeCompare(b)
+//     })
+// // )
+// const newFruit = [...fruit]
+// console.log(newFruit)
+
+// const nums = [5, 6, 1, 3, 4, 2];
+// const filter = nums.filter(x => x % 2 === 0)
+// const map = filter.map(x => x * 3)
+// console.log(map)
+// const reverse = reverse.reverse()
+// console.log(reverse)
+// const result = nums
+//   .filter((x) => x % 2 === 0)
+//   .map((a) => a * 3)
+//   .reverse();
+// console.log(result)
+
+// const players = [
+//   { id: "player-1", name: "Mango", timePlayed: 310, points: 54, online: false },
+//   { id: "player-2", name: "Poly", timePlayed: 470, points: 92, online: true },
+//   { id: "player-3", name: "Kiwi", timePlayed: 230, points: 48, online: true },
+//   { id: "player-4", name: "Ajax", timePlayed: 150, points: 71, online: false },
+//   { id: "player-5", name: "Chelsy", timePlayed: 80, points: 48, online: true },
+// ];
+// const sortedPlayers = players.sort((a, b) => b.timePlayed - a.timePlayed);
+// console.log(sortedPlayers);
+
+// const arr = [
+//   { name: "John", age: 32 },
+//   { name: "Jane", age: 26 },
+//   { name: "Mike", age: 42 },
+//   { name: "Emily", age: 29 },
+// ];
+// const sortedName = arr.sort((a, b) => {
+//   if (a.name < b.name) {
+//     return -1;
+//   }
+//   if (a.name > b.name) {
+//     return 1;
+//   } else {
+//     return 0;
+//   }
+// });
+// console.log(sortedName);
+
+// const products = [
+//   { name: "Product 1", price: 100, quantity: 5 },
+//   { name: "Product 2", price: 50, quantity: 10 },
+//   { name: "Product 3", price: 200, quantity: 2 },
+//   { name: "Product 4", price: 50, quantity: 5 },
+// ];
+// const sortedProduct = products.sort((a, b) => {
+//   if (a.price !== b.price) {
+//     return b.price - a.price;
+//   }
+//   return b.quantity - a.quantity;
+// });
+// console.log(sortedProduct);
+
