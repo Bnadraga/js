@@ -1348,3 +1348,144 @@
 // });
 // console.log(sortedProduct);
 
+// const baseSalary = 20000;
+// const overTime = 15;
+// const rate = 20;
+// const getWage = (baseSalary, overTime, rate) => {
+//   return baseSalary + overTime * rate;
+// };
+// getWage(baseSalary, overTime, rate);
+
+// const employee = {
+//   baseSalary: 20000,
+//   overTime: 15,
+//   rate: 20,
+//   getWage() {
+//     return this.baseSalary + this.overTime * this.rate;
+//   },
+// };
+// employee.getWage()
+
+// const animal = {
+//     legs: 4,
+// }
+// const cat = Object.create(animal)
+// cat.name = 'Murchik'
+// console.log(cat)
+
+// const animal = {
+//   eats: true,
+// };
+// const dog = Object.create(animal);
+// dog.barks = true;
+
+// for (const key in dog) {
+//   if (!dog.hasOwnProperty(key)) continue;
+//   console.log(key);
+// }
+
+// const animal = {
+//     eats: true,
+// };
+// const dog = Object.create(animal)
+// dog.barks = true
+// const keysDog = Object.keys(dog)
+// console.log(keysDog)
+
+// class User {
+//     #email
+//   constructor({ name, age, email }) {
+//     this.name = name;
+//     this.age = age;
+//     this.#email = email;
+//   }
+//   getEmail() {
+//     return this.#email;
+//   }
+//   changeEmail(newEmail) {
+//     return (this.#email = newEmail);
+//   }
+// }
+// const a = new User('Bohdan', 13);
+// console.log(a);
+// const b = new User('Nik', 19)
+// console.log(b);
+
+// const a = new User({
+//     name: 'Bohdan',
+//     age: 13,
+//     email: 'bnadraga2@gmail.com'
+// })
+// a.changeEmail('newbnadraga2@gmail.com')
+// console.log(a.#email)
+
+// class User {
+//   static Roles = {
+//     ADMIN: "admin",
+//     USER: "user",
+//   };
+//   #mail;
+//   #role
+//   constructor({ name, age, mail, role }) {
+//     this.name = name;
+//     this.age = age;
+//     this.#mail = mail;
+//     this.#role = role
+//   }
+//   get role() {
+//     return this.#role;
+//   }
+//   set role(newRole) {
+//     this.#role = newRole;
+//   }
+// }
+
+// const c = new User({
+//   mail: "bnadraga2@gmail.com",
+//   role: User.Roles.ADMIN,
+// });
+// console.log(c.Roles);
+// console.log(User.Roles);
+// console.log(c.role);
+// c.role = User.Roles.USER;
+// console.log(c.role);
+
+// class User {
+//   static #takenEmails = []
+//   static isEmails(email){
+//     return User.#takenEmails.includes(email)
+//   }
+//   #email
+//   constructor({email}){
+//     this.#email = email
+//     User.#takenEmails.push(email)
+//   }
+// }
+// const newMail = new User({email: 'bnadraga2@gmail.com'})
+// console.log(User.isEmails('bnadraga2@gmail.com'))
+
+// class Child extends Parents{
+
+// }
+
+// class User {
+//   #email;
+//   constructor(email) {
+//     this.#email = email;
+//   }
+//   get email() {
+//     return this.#email;
+//   }
+//   set email(newEmail) {
+//     this.#email = newEmail;
+//   }
+// }
+// class Admin extends User {
+//   constructor({ email, post }) {
+//     super(email);
+//     this.post = post;
+//   }
+// }
+// const admin = new Admin({ email: "dog@gav.gav", post: [] });
+// console.log(admin);
+// console.log(admin.email);
