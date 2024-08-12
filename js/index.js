@@ -1489,3 +1489,30 @@
 // const admin = new Admin({ email: "dog@gav.gav", post: [] });
 // console.log(admin);
 // console.log(admin.email);
+
+// Element.querySelector(selector);
+// const item = document.querySelector(".list-item");
+// const listItems = document.querySelectorAll(".list-item");
+// console.log(item);
+
+// const listWidth = document.querySelector("#menu");
+// listWidth.style.textTransform = "uppercase";
+// listWidth.style.fontSize = '26px'
+// listWidth.style.color = 'tomato'
+// console.log(listWidth)
+
+// document.parentNode
+// document.childNodes
+// document.children
+// document.firstChild
+// document.lastChild
+// document.firstElementChild
+// document.lastElementChild
+// document.previousSibling
+// document.nextSibling
+
+// const btn = document.querySelector('.btn')
+// btn.style.backgroundColor = 'tomato'
+// btn.style.color = 'white'
+// console.log(btn.style)
+
