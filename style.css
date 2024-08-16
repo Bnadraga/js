@@ -1,11 +1,30 @@
-.body{
-    display: flex;
-    flex-direction: column;
+body {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 15px;
+  padding-bottom: 100px;
 }
-input{
-    width: 200px;
-    display: flex;
+input {
+  width: 200px;
+  display: flex;
 }
-button{
-    width: 200px;
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  border: 1px dashed teal;
+  padding: 8px;
+  text-transform: uppercase;
+  margin: 5px 20px;
+}
+li {
+  display: block;
+}
+#gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }

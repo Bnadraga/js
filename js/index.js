@@ -1516,3 +1516,44 @@
 // btn.style.color = 'white'
 // console.log(btn.style)
 
+// const title = document.createElement("h1");
+// console.log(title);
+// title.textContent = "Test title";
+// console.log(title);
+// const img = document.createElement("img");
+// console.log(img);
+// img.src = "/js/hw-17/image.png";
+// img.alt = "aa";
+
+// const list = document.querySelector(".list");
+
+// const lastItem = document.createElement("li");
+// lastItem.textContent = "bob";
+// list.append(lastItem);
+
+// const firstItem = document.createElement("li");
+// firstItem.textContent = "alex";
+// list.prepend(firstItem);
+
+// const text = document.querySelector('.text')
+// text.remove()
+// console.log(text)
+
+// const title = document.querySelector('.article .title')
+// title.innerHTML = 'New article title'
+
+const technologies = ["html", "css", "js", "react", "node"];
+const list = document.querySelector(".list");
+
+const markup = technologies
+  .map((technology) => `<li class='list_item'>${technology}</li>`)
+  .join("");
+console.log(markup);
+list.innerHTML = markup;
+
+list.insertAdjacentHTML("afterend", "<h3 class='top'>new title</h3>");
+
+const saveBtn = document.querySelector("button[data-action='save']");
+console.log(saveBtn.dataset.action)
+const closeBtn = document.querySelector("button[data-action='close']");
+console.log(closeBtn.dataset.action)
