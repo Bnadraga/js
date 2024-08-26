@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HW-19</title>
+    <link rel="stylesheet" href="/style/hw-19.css" />
+  </head>
+  <body>
+    <h2>Task 1 and 2</h2>
+
+    <button class="button" data-action="open-modal" onclick="openModal()">
+      Open modal
+    </button>
+    <div class="backdrop js-backdrop" onclick="closeModalBackdrop()">
+      <div class="modal">
+        <h2>Modal window</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis,
+          nisl vel interdum vehicula, leo enim feugiat ligula, vitae placerat
+          velit felis vel mi. Phasellus eget orci lacinia, volutpat tellus
+          scelerisque, tristique tortor. Pellentesque a justo sed urna gravida
+          gravida. Mauris est metus, maximus vitae risus vel, cursus semper sem.
+          Vestibulum vulputate felis sed imperdiet tristique. Morbi condimentum
+          leo risus, tristique tincidunt tellus egestas in. Donec facilisis
+          gravida tortor, vel maximus purus tincidunt eget. Sed blandit purus
+          blandit, volutpat mauris luctus, viverra lacus. In ac libero quis
+          augue malesuada consectetur. Nullam dolor elit, elementum ac fermentum
+          a, volutpat at neque. Praesent placerat ante quis vehicula tincidunt.
+          Curabitur at lobortis ipsum. Suspendisse nec vulputate felis, ut
+          eleifend neque. Suspendisse nec lorem ac ex hendrerit finibus. Nam at
+          elit nec odio mattis semper ut eu velit. Aenean pulvinar sapien vitae
+          lectus aliquam, id pharetra est tempus.
+        </p>
+        <button class="button" data-action="close-modal" onclick="closeModal()">
+          Close modal
+        </button>
+      </div>
+    </div>
+
+    <h2>Task 3</h2>
+
+    <form>
+        <p>Choose a color:</p>
+        <label>
+            <input type="radio" name="color" value="red" onclick="redColor()">
+            Red
+        </label>
+        <label>
+            <input type="radio" name="color" value="yellow" onclick="yellowColor()">
+            Yellow
+        </label>
+        <label>
+            <input type="radio" name="color" value="green" onclick="greenColor()">
+            Green
+        </label>
+    </form>
+
+    <script src="/js/hw-19.js"></script>
+  </body>
+</html>
