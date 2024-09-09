@@ -1602,3 +1602,174 @@
 // function addAlert(){
 //   alert('hello')
 // }
+
+// document.addEventListener("keydown", (e) => {
+//   console.log("keydown:", e);
+// });
+// document.addEventListener("keyup", (e) => {
+//   console.log("keyup", e);
+// });
+// document.addEventListener("keydown", (e) => {
+//   console.log("keydown:", e.key);
+//   console.log("keydown:", e.code);
+// });
+
+// document.addEventListener('keydown', e => {
+//     e.preventDefault()
+//     if((e.ctrlKey || e.altKey) && e.code === 'KeyS'){
+//         console.log('it`s work!')
+//     }
+// })
+
+// const el = document.getElementById("mousedown-up");
+// el.addEventListener("mousedown", () => {
+//   el.textContent = "Кнопку натиснено";
+// });
+// el.addEventListener("mouseup", () => {
+//   el.textContent = "Кнопку відпущено";
+// });
+
+// const element = document.getElementById("mouseover-out");
+// element.addEventListener("mouseover", () => {
+//   element.textContent = "Курсор наведено";
+// });
+// element.addEventListener("mouseout", () => {
+//   element.textContent = "Курсор вийшов за межі об'єкту";
+// });
+
+// const element = document.getElementById("mousemove");
+// element.addEventListener("mousemove", (e) => {
+//   element.textContent = `Координати миші: Х=${e.clientX}, Y=${e.clientY}`
+// });
+
+// Написати програму яка буде за допомогою миші рухати блок на екрані. Цей код повинен прослуховати подію mousemove на документі та рухати блок на відстань, яку миша змістилася відносно центру блоку. Якщо вам потрібно рухати саме центр блоку, ви можете додати до відстані половину ширини та висоти блоку. Можна використати код та підказки нижче 👇
+
+// const block = document.querySelector(".block");
+// document.addEventListener("mousemove", (e) => {
+//   const mouseX = e.clientX;
+//   const mouseY = e.clientY;
+//   const width = block.offsetWidth;
+//   const height = block.offsetHeight;
+//   const newBlockX = mouseX - width / 2;
+//   const newBlockY = mouseY - height / 2;
+//   block.style.left = `${newBlockX}px`;
+//   block.style.top = `${newBlockY}px`;
+// });
+// document.addEventListener("click", () => {
+//   const randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+//   block.style.backgroundColor = randomColor;
+// });
+
+// document.addEventListener("keydown", (e) => {
+//   let box = document.getElementById("box");
+//   let step = 50;
+//   let left = parseInt(window.getComputedStyle(box).left);
+//   if (e.key === "ArrowLeft") {
+//     box.style.left = `${left - step}px`;
+//   }
+//   if (e.key === 'ArrowRight'){
+//     box.style.left = `${left + step}px`;
+//   }
+// });
+
+// const keys = ["d", "j", "e", "b", "h", "p", "x", "t", "q", "a"];
+// let currentKeyIndex = 0;
+// function startGame() {
+//   currentKeyIndex = Math.floor(Math.random() * keys.length);
+//   document.getElementById("key").textContent = keys[currentKeyIndex];
+// }
+// document.addEventListener("keydown", (e) => {
+//   if (e.key === keys[currentKeyIndex]) {
+//     document.getElementById("message").textContent =
+//       "Чудово! Натисніть наступну кнопку";
+//     startGame();
+//   } else {
+//     document.getElementById("message").textContent =
+//       "Упс, помилка, спробуйте знову";
+//   }
+// });
+// document.addEventListener("keypress", (e) => {
+//   e.preventDefault();
+// });
+// document.getElementById("resetGame").addEventListener("click", () => {
+//   document.getElementById("message").textContent =
+//     "Натисніть правильну клавішу:";
+//   startGame();
+// });
+// startGame();
+
+// const box = document.getElementById("box");
+// document.addEventListener("keydown", function (e) {
+//   if (e.key === "y") {
+//     box.style.backgroundColor = "yellow";
+//   }
+//   if (e.key === "g") {
+//     box.style.backgroundColor = "green";
+//   }
+//   if (e.key === "p") {
+//     box.style.backgroundColor = "pink";
+//   }
+//   if (e.key === "v") {
+//     box.style.backgroundColor = "violet";
+//   }
+// });
+
+// const links = document.querySelectorAll('ul li a')
+// links.forEach(link => {
+//   const href = link.getAttribute('href')
+//   if (href.startsWith('https') || href.startsWith('http') || href.startsWith('ftp')){
+//     link.style.color = 'orange'
+//   }
+// })
+
+// if (links.length > 0){
+//   links[0].classList.add('li_link');
+//   links[links.length - 1].classList.add('li_link')
+// }
+
+// const text = document.querySelector('h1')
+// text.textContent = 'Title'
+// text.classList.add('title')
+// text.style.color = 'red'
+// text.style.fontSize = '40px'
+// text.classList.replace('title', 'newTitle')
+
+// links.forEach(link => {
+//   if (link.classList.contains('list')){
+//     alert('Список має клас list')
+//   }else{
+//     alert('Список немає клас list')
+//   }
+// })
+
+// const array1 = [5, 10, 15, 20];
+// const array2 = [10, 20, 30];
+
+// const sum1 = array1.reduce((acc, num) => acc + num, 0);
+// const sum2 = array2.reduce((acc, num) => acc + num, 0);
+// alert(sum1 + sum2)
+
+// const products = [
+//   {name: 'macBook', price: 1000, category: 'Electronik', stock: 56},
+//   {name: 'iPhone', price: 899, category: 'Electronik', stock: 30},
+//   {name: 'iPad', price: 700, category: 'Electronik', stock: 14},
+//   {name: 'Airpods', price: 300, category: 'Electronik', stock: 2},
+// ]
+// function calc (products, category){
+//   return products.filter(product => product.category === category)
+//   .reduce((total, product) => total + (product.price * product.stock), 0)
+// }
+// const totalValue = calc(products, 'Electronik')
+// console.log(`Total price in category Electronika ${totalValue}`)
+
+// class Person {
+//   constructor(firstName, lastName){
+//     this.firstName = firstName
+//     this.lastName = lastName
+//   }
+//   getFullName(){
+//     return alert(`${this.firstName} ${this.lastName}`)
+//   }
+// }
+// const person = new Person('Bohdan', 'Nadraha')
+// person.getFullName()
